@@ -23,6 +23,7 @@ pub fn part_one(input: &str) -> Option<u32> {
 }
 
 pub fn part_two(input: &str) -> Option<u32> {
+    // convert input to u32 vec
     let mut input = input.lines().map(|s| s.parse::<u32>().expect("Failed to parse u32"));
 
     let mut window: [u32; 3] = [0; 3];
